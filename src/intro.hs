@@ -27,23 +27,47 @@
 -- {END}
 -------------------------------------------------------------------------------}
 
+--------------------------------------------------------------------------------
+-- Let the compiler figure out the types.
 -- {BEGIN: square}
 
 mySquare x = x * x
 
 -- {END}
 
--- {BEGIN: sum}
+--------------------------------------------------------------------------------
+-- Only work with integers.
+-- {BEGIN: square'}
 
-mySum []     = 0
-mySum (x:xs) = x + mySum xs
+mySquare' :: Int -> Int
+mySquare' x = x * x
 
 -- {END}
 
--- {BEGIN: sum'}
+--------------------------------------------------------------------------------
+-- Work with any numeric type.
+-- {BEGIN: square''}
 
-mySum' :: Num n => [n] -> n
-mySum' []     = 0
-mySum' (x:xs) = x + mySum xs
+mySquare'' :: Num a => a -> a
+mySquare'' x = x * x
+
+-- {END}
+
+--------------------------------------------------------------------------------
+-- Using functions as operators and partial application.
+-- {BEGIN: add}
+
+myAdd :: Num a => a -> a -> a
+myAdd x y = x + y
+
+-- {END}
+
+--------------------------------------------------------------------------------
+-- Pattern matching and recursion.
+-- {BEGIN: sum}
+
+mySum :: Num a => [a] -> a
+mySum []     = 0
+mySum (x:xs) = x + mySum xs
 
 -- {END}
