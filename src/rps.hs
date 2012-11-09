@@ -27,14 +27,11 @@ play p1 p2
   | p2 `beats` p1 = "You lose."
   | otherwise     = "Tie."
 
-game :: IO ()
-game = do
+main :: IO ()
+main = do
   putStr "Enter your move [Rock, Paper, or Scissors]: "
   hFlush stdout
-  p1 <- getLine   >>= readIO
-  p2 <- getStdGen >>= return . fst . random
-  putStrLn $ (show p1) ++ " vs. " ++ (show p2)
+  p1 <- getLine >>= readIO
+  p2 <- liftM (fst . random) getStdGen
+  putStrLn $ show p1 ++ " vs. " ++ show p2
   putStrLn $ play p1 p2
-
-main :: IO ()
-main = game
