@@ -31,7 +31,7 @@ main :: IO ()
 main = do
   putStr "Enter your move [Rock, Paper, or Scissors]: "
   hFlush stdout
-  p1 <- getLine >>= readIO
+  p1 <- liftM read getLine
   p2 <- liftM (fst . random) getStdGen
   putStrLn $ show p1 ++ " vs. " ++ show p2
   putStrLn $ play p1 p2
