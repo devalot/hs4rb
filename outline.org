@@ -51,6 +51,9 @@
 ** Some Real World Haskell
    - Implementing the Unix [[./src/wc.hs][wc]] utility
    - [[./src/rps.hs][Rock-paper-scissors]]
+* Writing Better Ruby
+  - Minimize side effects
+  - Use fewer instance variables
 * Learning Haskell
   :PROPERTIES:
   :ID:       488e9b3e-ec72-4e9b-8973-97376004d885
