@@ -1,19 +1,9 @@
 import System.IO
 import System.Random
 import Control.Monad
-import Control.Arrow
 
 data Throw = Rock | Paper | Scissors
-           deriving (Show, Read, Enum, Bounded)
-
-instance Random Throw where
-  random g = first toEnum $ randomR (a, b) g
-    where a = fromEnum (minBound :: Throw)
-          b = fromEnum (maxBound :: Throw)
-
-  randomR (a, b) g = first toEnum $ randomR (a', b') g
-    where a' = fromEnum a
-          b' = fromEnum b
+           deriving (Show, Read, Enum)
 
 beats :: Throw -> Throw -> Bool
 Rock     `beats` Scissors = True
@@ -32,6 +22,6 @@ main = do
   putStr "Enter your move [Rock, Paper, or Scissors]: "
   hFlush stdout
   p1 <- liftM read getLine
-  p2 <- liftM (fst . random) getStdGen
+  p2 <- liftM (toEnum . fst . (randomR (0,2))) getStdGen
   putStrLn $ show p1 ++ " vs. " ++ show p2
   putStrLn $ play p1 p2
