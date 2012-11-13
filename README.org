@@ -2,13 +2,13 @@
 #+author: Peter Jones <pjones@devalot.com>
 #+startup: content
 
-* Goals
+* Topics and Goals
   :PROPERTIES:
   :ID:       868720b6-d686-4eb8-b855-dccae37b1f4f
   :END:
-  1. Review Ruby from another perspective
-  2. Haskell basics (functions and types)
-  3. Write better Ruby code
+  1. The primary properties of Ruby and Haskell
+  2. Learn the basics of Haskell (functions and types)
+  3. Haskell lessons for writing better Ruby code
 * What is Ruby?
   :PROPERTIES:
   :ID:       f4b8e166-e1a1-406c-b0db-3f4a64b511d0
@@ -35,19 +35,27 @@
    - Braces and semicolons *or*
    - Layout (use indentation like Python)
 ** Defining Functions
-   - Name and arguments go on the left hand side of =
-   - The function's body goes on the right
+   - Name and arguments go on the left-hand side of the equals sign
+   - The body of the function goes on the right-hand side
    - Functions must produce the same result given the same arguments
-   - The only "data" a function sees are its arguments
-   - The compiler can infer type information
+   - The only "data" a function can see are its arguments
+   - The compiler can infer type information automatically
    - You can also manually specify type information
    - Giving explicit type information gives the compiler something to
-     check against
+     check against (what you expect vs. is really given)
 ** Function Types and Type Classes
    - When you give type information you can use:
      - Specific types (e.g. Int, Bool)
      - Type variables (e.g. a)
      - Type classes (e.g. Num a =>)
+     - That is, functions can be polymorphic
+** User Defined Types
+   - Some types to review
+     1. Bool
+     2. Person (user-defined type in [[./src/types.hs][types.hs]])
+     3. Maybe
+   - Difference between type constructors and value constructors
+   - Pattern matching and value constructors
 ** Some Real World Haskell
    - Implementing the Unix [[./src/wc.hs][wc]] utility
    - [[./src/rps.hs][Rock-paper-scissors]]
