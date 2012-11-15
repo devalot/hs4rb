@@ -6,25 +6,25 @@ class RockPaperScissors
     "scissors" => "paper",
   }
 
-  def beats (p1, p2)
-    WINS[p1] == p2
+  def self.random
+    WINS.keys[rand(WINS.size)]
   end
 
   def play (p1, p2)
-    if beats(p1, p2)
-      "You win!"
-    elsif beats(p2, p1)
-      "You lose."
-    else
+    if p1 == p2
       "Tie."
+    elsif WINS[p1] == p2
+      "You win!"
+    else
+      "You lose."
     end
   end
 end
 
-$stdout.print("Enter your move [Rock, Paper, or Scissors]: ")
-p1 = $stdin.gets.chomp.downcase
-p2 = RockPaperScissors::WINS.keys[rand(RockPaperScissors::WINS.size)]
+print("Enter your move [Rock, Paper, or Scissors]: ")
+p1 = gets.chomp.downcase
+p2 = RockPaperScissors.random
 
 rps = RockPaperScissors.new
-$stdout.puts("#{p1.capitalize} vs. #{p2.capitalize}")
-$stdout.puts(rps.play(p1, p2))
+puts("#{p1.capitalize} vs. #{p2.capitalize}")
+puts(rps.play(p1, p2))
