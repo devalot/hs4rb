@@ -30,6 +30,7 @@
   - Statically typed with a strong type system
   - Lazy evaluation (non-strict evaluation)
   - Compiled or interpreted
+
 * Haskell Basics
 ** Syntax
    - Braces and semicolons *or*
@@ -60,6 +61,9 @@
    - Implementing the Unix [[./src/wc.hs][wc]] utility
    - [[./src/rps.hs][Rock-paper-scissors]]
 * Writing Better Ruby
+  :PROPERTIES:
+  :ID:       bd40cdd6-c72f-4336-b7c5-6ffeb785a7b7
+  :END:
   - Minimize side effects
   - Use fewer instance variables
 * Learning Haskell

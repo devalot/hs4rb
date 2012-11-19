@@ -7,10 +7,10 @@ import Data.Maybe
 
   - The name of this function is "mySquare"
   - It takes a single argument, "x"
-  - Notice that there is no type information
-  - The compiler will infer the types
   - Functions must produce the same result given the same arguments
   - Functions can only see their arguments
+  - Notice that there is no type information
+  - The compiler will infer the types
 
 -}
 mySquare x = x * x
@@ -53,6 +53,7 @@ mySquare'' x = x * x
 
   - This function takes two arguments
   - Let's play with:
+    - Function application
     - Partial application
     - Infix notation
     - This function compared to the + operator
