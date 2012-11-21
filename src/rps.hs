@@ -1,7 +1,7 @@
 import System.IO
 import System.Random
-import Control.Monad
-import Control.Arrow
+import Control.Monad (liftM)
+import Control.Arrow (first)
 
 data Throw = Rock | Paper | Scissors
            deriving (Show, Read, Enum, Bounded)

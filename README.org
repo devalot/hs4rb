@@ -7,7 +7,7 @@
   :ID:       868720b6-d686-4eb8-b855-dccae37b1f4f
   :END:
   1. The primary properties of Ruby and Haskell
-  2. Learn the basics of Haskell (functions and types)
+  2. Learn the *basics* of Haskell (functions and types)
   3. Haskell lessons for writing better Ruby code
 * What is Ruby?
   :PROPERTIES:
@@ -28,9 +28,8 @@
   - Functions are not allowed to have side effects (no state)
   - Based on abstract mathematics and lambda calculus
   - Statically typed with a strong type system
-  - Lazy evaluation (non-strict evaluation)
-  - Compiled or interpreted
-
+  - Non-strict evaluation (lazy evaluation)
+  - Compiled (native object code) or interpreted
 * Haskell Basics
 ** Syntax
    - Braces and semicolons *or*
@@ -60,12 +59,24 @@
 ** Some Real World Haskell
    - Implementing the Unix [[./src/wc.hs][wc]] utility
    - [[./src/rps.hs][Rock-paper-scissors]]
+* Why I Like Haskell
+  :PROPERTIES:
+  :ID:       5c1d117f-28c3-4716-b4e9-bb2fb2dfad0d
+  :END:
+  - Everything is very well thought out
+  - The syntax is beautiful and clean
+  - The type system is fantastic (type-driven development)
+  - Concurrency is a high-priority
+  - Function purity makes it easier to reason/understand
+  - The best of both worlds (interpreted vs. compiled)
 * Writing Better Ruby
   :PROPERTIES:
   :ID:       bd40cdd6-c72f-4336-b7c5-6ffeb785a7b7
   :END:
   - Minimize side effects
   - Use fewer instance variables
+  - Write simpler classes with fewer responsibilities
+  - Use nil less often?
 * Learning Haskell
   :PROPERTIES:
   :ID:       488e9b3e-ec72-4e9b-8973-97376004d885
@@ -76,6 +87,7 @@
    3. [[http://www.haskell.org/haskellwiki/All_About_Monads][All About Monads]] (digs into each of the standard monads)
    4. [[http://www.haskell.org/haskellwiki/IO_inside][IO inside]] (understand IO and side effects)
    5. Review [[http://book.realworldhaskell.org/read/][Real World Haskell]] (the online version, watch for typos)
+   6. Another checklist covering [[http://acm.wustl.edu/functional/haskell.php][how to learn Haskell]]
 ** Things to Keep In Mind
    - If Haskell is your first purely functional language it might take
      some time to get out of your imperative skin
