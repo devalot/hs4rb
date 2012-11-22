@@ -75,7 +75,7 @@ myAdd x y = x + y
   - Notice that the (->) operator is right associative
 
 -}
-myAdd' :: Num a => a -> a -> a
+myAdd' :: Num a => a -> (a -> a)
 myAdd' x = \y -> x + y
 
 -- {END}
@@ -100,6 +100,6 @@ mySum (x:xs) = x + mySum xs
 
 justSquare :: Num a => Maybe a -> Maybe a
 justSquare Nothing  = Nothing
-justSquare (Just x) = Just $ x * x
+justSquare (Just x) = Just (x * x)
 
 -- {END}

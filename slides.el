@@ -11,6 +11,7 @@
   ("src/funcs.hs"    "add")
   ("src/sugar1.c"    "main")
   ("src/sugar2.c"    "main")
+  ("src/funcs.hs"    "add")
   ("src/funcs.hs"    "add'")
   ("src/funcs.hs"    "sum")
   ("src/banners.txt" "types")
