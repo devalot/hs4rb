@@ -70,9 +70,9 @@ myAdd x y = x + y
 
 {-
 
-  - This function strips away some syntactic sugar and show currying
-  - It also includes an example of lambda functions
   - Notice that the (->) operator is right associative
+  - This function strips away some syntactic sugaring to show currying
+  - It also includes an example of lambda functions
 
 -}
 myAdd' :: Num a => a -> (a -> a)
