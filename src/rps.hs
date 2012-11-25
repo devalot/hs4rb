@@ -1,6 +1,5 @@
 import System.IO
 import System.Random
-import Control.Monad (liftM)
 import Control.Arrow (first)
 
 data Throw = Rock | Paper | Scissors
@@ -26,7 +25,7 @@ main :: IO ()
 main = do
   putStr "Enter your move [Rock, Paper, or Scissors]: "
   hFlush stdout
-  p1 <- liftM read getLine
+  p1 <- readLn
   p2 <- randomIO
   putStrLn $ show p1 ++ " vs. " ++ show p2
   putStrLn $ play p1 p2
