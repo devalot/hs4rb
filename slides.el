@@ -21,6 +21,7 @@
   ("src/types.hs"    "person")
   ("src/types.hs"    "maybe")
   ("src/funcs.hs"    "justSquare")
+  ("src/funcs.hs"    "justSquare'")
   ("src/types.hs"    "tree")
   ("src/banners.txt" "examples")
   ("src/wc.hs")

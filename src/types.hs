@@ -36,7 +36,8 @@ data Person = Person
 
 {-
 
-  - A polymorphic data type using type variables
+  - A polymorphic data type using a type variable
+  - Perfect for composing functions that might fail
 
 -}
 data Maybe' a = Nothing' | Just' a

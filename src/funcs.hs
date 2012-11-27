@@ -1,4 +1,6 @@
 import Data.Maybe
+import Control.Monad
+import Control.Applicative
 
 --------------------------------------------------------------------------------
 -- {BEGIN: square}
@@ -101,5 +103,13 @@ mySum (x:xs) = x + mySum xs
 justSquare :: Num a => Maybe a -> Maybe a
 justSquare Nothing  = Nothing
 justSquare (Just x) = Just (x * x)
+
+-- {END}
+
+--------------------------------------------------------------------------------
+-- {BEGIN: justSquare'}
+
+justSquare' :: Num a => a -> Maybe a
+justSquare' x = Just (x * x)
 
 -- {END}

@@ -84,10 +84,11 @@
 ** Recommended Way to Learn Haskell
    1. [[http://learnyouahaskell.com/][Learn You a Haskell]] (buy the book)
    2. [[http://www.haskell.org/haskellwiki/Typeclassopedia][Typeclassopedia]] (dig into Haskell types)
-   3. [[http://www.haskell.org/haskellwiki/All_About_Monads][All About Monads]] (digs into each of the standard monads)
-   4. [[http://www.haskell.org/haskellwiki/IO_inside][IO inside]] (understand IO and side effects)
-   5. Review [[http://book.realworldhaskell.org/read/][Real World Haskell]] (the online version, watch for typos)
-   6. Another checklist covering [[http://acm.wustl.edu/functional/haskell.php][how to learn Haskell]]
+   3. [[http://cdsmith.wordpress.com/2012/04/18/why-do-monads-matter/][Why Do Monads Matter?]] (great article)
+   4. [[http://www.haskell.org/haskellwiki/All_About_Monads][All About Monads]] (digs into each of the standard monads)
+   5. [[http://www.haskell.org/haskellwiki/IO_inside][IO inside]] (understand IO and side effects)
+   6. Review [[http://book.realworldhaskell.org/read/][Real World Haskell]] (the online version, watch for typos)
+   7. Another checklist covering [[http://acm.wustl.edu/functional/haskell.php][how to learn Haskell]]
 ** Things to Keep In Mind
    - If Haskell is your first purely functional language it might take
      some time to get out of your imperative skin
