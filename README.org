@@ -26,7 +26,6 @@
   - Declarative and purely functional
   - Functions are first-class citizens
   - Functions are not allowed to have side effects (no state)
-  - Based on abstract mathematics and lambda calculus
   - Statically typed with a strong type system
   - Non-strict evaluation (lazy evaluation)
   - Compiled (native object code) or interpreted
