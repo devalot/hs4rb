@@ -13,22 +13,22 @@
   :PROPERTIES:
   :ID:       f4b8e166-e1a1-406c-b0db-3f4a64b511d0
   :END:
-  - Imperative and object-oriented
-  - Objects are first-class citizens
-  - Nearly everything is mutable
-  - Dynamically typed with a class-based type system
-  - Strict evaluation
-  - Interpreted
+  1. Imperative and object-oriented
+  2. Objects are first-class citizens
+  3. Nearly everything is mutable
+  4. Dynamically typed with a class-based type system
+  5. Strict evaluation
+  6. Interpreted
 * What is Haskell?
   :PROPERTIES:
   :ID:       1d0968dd-4cbb-43a3-8fe4-3d82a092075e
   :END:
-  - Declarative and purely functional
-  - Functions are first-class citizens
-  - Functions are not allowed to have side effects (no state)
-  - Statically typed with a strong type system
-  - Non-strict evaluation (lazy evaluation)
-  - Compiled (native object code) or interpreted
+  1. Declarative and purely functional
+  2. Functions are first-class citizens
+  3. Functions are not allowed to have side effects (no state)
+  4. Statically typed with a strong type system
+  5. Non-strict evaluation (lazy evaluation)
+  6. Compiled (native object code) or interpreted
 * Haskell Basics
 ** Syntax
    - Braces and semicolons *or*

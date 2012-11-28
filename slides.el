@@ -11,9 +11,11 @@
   ("src/funcs.hs"    "square''")
   ("src/funcs.hs"    "add")
   ("src/sugar.c"     "func1")
-  ("src/sugar.c"     "func2")
+  (bufshow-split-below "src/sugar.c" "src/sugar.c"
+                       "func1" "func2")
   ("src/sugar.c"     "func3")
-  ("src/sugar.c"     "func4")
+  (bufshow-split-below "src/sugar.c" "src/sugar.c"
+                       "func3" "func4")
   ("src/funcs.hs"    "add")
   ("src/funcs.hs"    "add'")
   ("src/funcs.hs"    "sum")
