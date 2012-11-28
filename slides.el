@@ -2,8 +2,9 @@
 (bufshow-start
  [("src/banners.txt" "intro")
   ("README.org"      "868720b6-d686-4eb8-b855-dccae37b1f4f")
-  ("README.org"      "f4b8e166-e1a1-406c-b0db-3f4a64b511d0")
-  ("README.org"      "1d0968dd-4cbb-43a3-8fe4-3d82a092075e")
+  (bufshow-split-below "README.org" "README.org"
+                       "f4b8e166-e1a1-406c-b0db-3f4a64b511d0"
+                       "1d0968dd-4cbb-43a3-8fe4-3d82a092075e")
   ("src/banners.txt" "functions")
   ("src/funcs.hs"    "square")
   ("src/funcs.hs"    "square'")
