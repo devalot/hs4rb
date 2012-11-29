@@ -1,4 +1,9 @@
-;;; slides.el -- Slide definitions for bufshow.el
+;;; slides.el -- Slide definitions
+;;
+;; Presentation given using Emacs and bufshow.  For more info see:
+;;
+;;   http://github.com/pjones/bufshow
+;;
 (bufshow-start
  [("src/banners.txt" "intro")
   ("README.org"      "868720b6-d686-4eb8-b855-dccae37b1f4f")
@@ -11,11 +16,9 @@
   ("src/funcs.hs"    "square''")
   ("src/funcs.hs"    "add")
   ("src/sugar.c"     "func1")
-  (bufshow-split-below "src/sugar.c" "src/sugar.c"
-                       "func1" "func2")
+  (bufshow-split-below "src/sugar.c" "src/sugar.c" "func1" "func2")
   ("src/sugar.c"     "func3")
-  (bufshow-split-below "src/sugar.c" "src/sugar.c"
-                       "func3" "func4")
+  (bufshow-split-below "src/sugar.c" "src/sugar.c" "func3" "func4")
   ("src/funcs.hs"    "add")
   ("src/funcs.hs"    "add'")
   ("src/funcs.hs"    "sum")
